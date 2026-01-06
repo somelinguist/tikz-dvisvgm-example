@@ -1,0 +1,18 @@
+% tikzpic.tex
+\documentclass[crop,tikz]{standalone}% 'crop' is the default for v1.0, before it was 'preview'
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage{libertinus}
+
+\begin{document}
+\tikzset{cat object/.style=   {node distance=4em}}
+
+\begin{tikzpicture}[parent anchor=south, align=center, level distance=3em, anchor=north, sibling distance=12em, child anchor=north]
+\node (top) {construction}
+  child {node {function}
+   [sibling distance=6em]
+   child {node {information\\ packaging}}
+   child {node {semantic\\ content}}}
+  child {node {form}
+   child {node {morphosyntax}}};
+\end{tikzpicture}
+\end{document}
