@@ -31,3 +31,5 @@ dvisvgm --pdf construction-diagram.pdf -o construction-diagram.svg
 ```   
 
 The last two steps were to reduce the size of the file, as I had the font installed on my system, and also use it when producing PDF output with pandoc. This might cause other issues when used on a system without the font installed.
+
+The final output including steps 3-4 can be seen in `construction-diagram-font-curves-removed.svg`.
